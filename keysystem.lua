@@ -51,3 +51,11 @@ local GetKeyButton = KeyWindow:AddButton("Get Key", UDim2.new(0.55, 0, 0.65, 0),
         warn("setclipboard is not available.")
     end
 end)
+
+local GifLabel = Library:Create('ImageLabel', {
+    Position = UDim2.new(0.7, 0, 0.1, 0),
+    Size = UDim2.new(0.25, 0, 0.75, 0),
+    Image = "https://cdn.discordapp.com/attachments/1320134845262856303/1331617744210235403/a_0dc428ee4c06be47df17f81dd1f54596.gif?ex=67b291ea&is=67b1406a&hm=2240eab3fc0a2a074f25b29eb4d9c40b39ba5c64a9833483e713be8c5b9e0c21&",
+    BackgroundTransparency = 1,
+    Parent = KeyWindow.Outer.Frame.Frame
+})
