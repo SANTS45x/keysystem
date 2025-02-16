@@ -4,10 +4,6 @@ local KeyWindow = Library:CreateWindow("Key System", UDim2.fromOffset(300, 180))
 
 local KeyBox = KeyWindow:AddTextBox("Enter Key...", UDim2.new(0.1, 0, 0.15, 0))
 
-local function IsKeyExpired()
-    return (tick() - KeyStartTime) > KeyExpiration
-end
-
 local SubmitButton = KeyWindow:AddButton("Submit", UDim2.new(0.1, 0, 0.65, 0), function()
     if IsKeyExpired() then
         local player = cloneref(game:GetService("Players")).LocalPlayer
