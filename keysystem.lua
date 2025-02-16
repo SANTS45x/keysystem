@@ -4,13 +4,15 @@ local KeyWindow = Library:CreateWindow("Key System", UDim2.fromOffset(300, 180))
 
 local KeyBox = KeyWindow:AddTextBox("Enter Key...", UDim2.new(0.1, 0, 0.15, 0))
 
+local KeyPath = "DisabledHubConfigs/Key"
+local FileName = "SavedKey.lua"
+
+local SavedKey = Library:LoadKey(KeyPath, FileName)
+if SavedKey then
+    KeyBox.Text = SavedKey
+end
+
 local SubmitButton = KeyWindow:AddButton("Submit", UDim2.new(0.1, 0, 0.65, 0), function()
-    if IsKeyExpired() then
-        local player = cloneref(game:GetService("Players")).LocalPlayer
-        player:Kick("Key Expired")
-        return
-    end
-    
     if KeyBox.Text == "FISCH-4VXHPJKG-BAMARZ-QQ6ZLP" then
         KeyWindow:Close()
 
@@ -50,11 +52,10 @@ local SubmitButton = KeyWindow:AddButton("Submit", UDim2.new(0.1, 0, 0.65, 0), f
     end
 end)
 
-local GetKeyButton = KeyWindow:AddButton("Get Key", UDim2.new(0.55, 0, 0.65, 0), function()
+local GetKeyButton = KeyWindow:AddButton("DISCORD", UDim2.new(0.55, 0, 0.65, 0), function()
     if setclipboard then
         setclipboard("https://discord.gg/zmcVC3EENd")
     else
         warn("setclipboard is not available.")
     end
 end)
-
