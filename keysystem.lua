@@ -13,7 +13,7 @@ if SavedKey then
 end
 
 local SubmitButton = KeyWindow:AddButton("Submit", UDim2.new(0.1, 0, 0.65, 0), function()
-    if KeyBox.Text == "FISCH" then
+    if KeyBox.Text == "FISCH-H0ZGKKA-EODPWY-X734HI" then
         KeyWindow:Close()
 
         -- Executar script após validação da key
