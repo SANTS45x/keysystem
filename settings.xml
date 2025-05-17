@@ -46,7 +46,7 @@
   <ProcessName>cs2.exe</ProcessName>
   <Warnings>
     <LdrpLoadDll>false</LdrpLoadDll>
-    <ManualMap>true</ManualMap>
+    <ManualMap>false</ManualMap>
     <Scramble>false</Scramble>
   </Warnings>
 </_x206A__x200F__x202D__x206B__x206C__x202A__x202E__x200F__x200F__x206F__x202D__x200E__x206A__x200E__x206C__x200B__x202C__x206F__x206B__x202A__x206A__x206C__x202B__x200C__x200F__x200D__x200C__x202C__x202A__x200B__x200D__x200D__x206B__x206C__x202C__x200D__x206A__x202B__x202B__x206F__x202E_>
