@@ -16,7 +16,7 @@
       <HideFromDebugger>false</HideFromDebugger>
       <ManualResolveImports>false</ManualResolveImports>
     </Advanced>
-    <AutoInject>true</AutoInject>
+    <AutoInject>false</AutoInject>
     <Background1>DodgerBlue</Background1>
     <Background2>DeepSkyBlue</Background2>
     <CloseOnInject>false</CloseOnInject>
